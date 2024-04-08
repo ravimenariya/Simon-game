@@ -1,0 +1,175 @@
+h1 {
+    text-align: center;
+    font-size: 100px;
+    font-family: Rubik Scribble;
+    letter-spacing: 5px;
+    color: rgb(57, 236, 57);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+body {
+    /* background-image: linear-gradient(90deg, rgb(0, 0, 59), rgba(32, 8, 8, 0.76), rgba(58, 6, 6, 0.76), rgb(24, 24, 99), rgba(0, 0, 0, 0.747)); */
+    background-image: url("https://img.freepik.com/free-vector/abstract-realistic-technology-particle-background_52683-33064.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content {
+    height: 500px;
+    width: 600px;
+    background-color: beige;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    border-radius: 20px;
+    background-image: linear-gradient(120deg, rgb(52, 52, 153), rgba(190, 87, 87, 0.76), rgba(238, 114, 114, 0.76), rgb(101, 101, 199), rgba(146, 26, 26, 0.747));
+    backdrop-filter: blur(2px);
+    box-shadow: 10px 10px 50px rgb(10, 10, 10);
+}
+
+
+
+.box {
+    width: 80%;
+    height: 80%;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    background-color: rgb(50, 207, 50);
+    font-size: 12rem;
+    text-align: center;
+    box-shadow: 10px 10px 50px rgb(10, 10, 10);
+    backdrop-filter: blur(5px);
+
+}
+
+.glow {
+    box-shadow: 10px 10px 25px rgb(255, 255, 255), -10px -10px 20px rgb(255, 255, 255);
+}
+
+/* Add these CSS rules to your existing style.css file */
+
+.user-input {
+    height: 250px;
+    width: 800px;
+    border: 2px solid black;
+    margin: 30px 30px;
+    border-radius: 20px;
+    /* background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4ri0LYF2ypklwcKRxVWJrZlJcPjQ2QNPJJLDMth36elNzlrcR4VRaAV9hNuzwag13HD4&usqp=CAU"); */
+    background-size: cover;
+    /* background: linear-gradient(
+        to right bottom,
+        rgb(52, 52, 153),rgba(190, 87, 87, 0.76), rgba(238, 114, 114, 0.76), rgb(101, 101, 199), rgba(146, 26, 26, 0.747)
+    ); */
+    z-index: 1;
+    border-radius: 1rem; /* Reduced border-radius for a more subtle effect */
+    box-shadow: 10px 10px 50px rgb(10, 10, 10);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1f007bc7;
+    
+}
+
+
+#startButton {
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  /* width: 250px; */
+  scale: 1.4;
+    align-items: center;
+    justify-self: center;
+    width: 130px;
+}
+
+
+
+
+#startButton:hover {
+    background-color: rgba(57, 236, 57, 0.8);
+}
+
+#startButton:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  #startButton {
+    padding: 10px 30px;
+  }
+}
+
+
+
+#userInput {
+    padding: 10px;
+    border: 4px solid gold;
+    border-radius: 10px;
+    font-size: 22px;
+    margin-right: 10px;
+    width: 500px;
+    /* height: 80%; */
+    /* scale: 1.3; */
+    /* Adjust the width as needed */
+    color: rgb(17, 0, 255);
+    font-weight: 700;
+}
+
+
+
+
+
+#check {
+    padding: 10px 20px;
+    background-color: rgb(57, 236, 57);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 120%;
+    width: 100px;
+}
+
+
+
+#userOutput{
+    background-color: rgb(222, 224, 99);
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    /* color: white; */
+}
